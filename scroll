@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .fixed-top {
+      position: fixed !important;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1030;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      animation: slideDown 0.3s ease-in-out;
+    }
+
+    @keyframes slideDown {
+      from {
+        top: -60px;
+      }
+      to {
+        top: 0;
+      }
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      color: #212529;
+    }
+
+    h1 span {
+      color: #0d6efd;
+    }
+
+    h2 {
+      font-weight: 600;
+    }
+
+    .card {
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      border: none;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    footer {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Your Name</a>
+    </div>
+  </nav>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.navbar');
+      navbar.classList.toggle('fixed-top', window.scrollY > 0);
+    });
+  </script>
+
+  <!-- About Me Section -->
+  <section id="about" class="container mt-5">
+    <h2 class="text-center mb-4">About Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8" data-aos="fade-up">
+        <div class="card p-4 shadow-sm">
+          <p>Hello! I'm a passionate and motivated Computer Science graduate student with a strong foundation in data science, machine learning, and full-stack development. I enjoy solving real-world problems using technology and data-driven solutions. Currently, I'm seeking opportunities to contribute to impactful projects and continue growing in the data field.</p>
+          <p>My key strengths include analytical thinking, strong coding skills, and the ability to quickly adapt and learn new technologies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Download Section -->
+  <section id="resume" class="container mt-5 text-center">
+    <a href="assets/resume.pdf" class="btn btn-outline-primary btn-lg" target="_blank">Download My Resume</a>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="text-center mt-5">
+    <h1>Hello, I'm <span class="text-primary">Your Name</span></h1>
+    <p>Aspiring Data Scientist | Software Engineer</p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="container mt-5">
+    <h2 class="text-center mb-4">Skills</h2>
+    <div class="row text-center">
+      <div class="col-md-4 mb-3" data-aos="fade-up">
+        <div class="card p-3 shadow-sm">
+          <h4>Python</h4>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="card p-3 shadow-sm">
+          <h4>Machine Learning</h4>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-delay="200">
+        <div class="card p-3 shadow-sm">
+          <h4>SQL</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container mt-5">
+    <h2 class="text-center mb-4">Projects</h2>
+    <div class="row">
+      <div class="col-md-6 mb-4" data-aos="zoom-in">
+        <div class="card p-3 shadow-sm">
+          <h4>Twitter Sentiment Analysis</h4>
+          <p>Analyzed sentiment of tweets using NLP and machine learning models. Achieved 96.8% accuracy with an artificial neural network.</p>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="150">
+        <div class="card p-3 shadow-sm">
+          <h4>PM2.5 Forecasting</h4>
+          <p>Developed an LSTM-based deep learning model to forecast air pollution levels in Beijing using time-series data.</p>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+        <div class="card p-3 shadow-sm">
+          <img src="assets/images/music-genre.png" class="img-fluid mb-2" alt="Music Genre Classification">
+          <h4>Music Genre Classification</h4>
+          <p>Trained a neural network to classify music into 10 genres using the GTZAN dataset. Achieved 83.7% test accuracy.</p>
+          <a href="https://github.com/yourusername/music-genre-classification" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Me Section -->
+  <section id="contact" class="container mt-5">
+    <h2 class="text-center mb-4">Contact Me</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8" data-aos="fade-up">
+        <div class="card p-4 shadow-sm">
+          <form action="mailto:your.email@example.com" method="POST" enctype="text/plain">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-3 bg-dark text-white mt-5">
+    © 2025 Your Name
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
