@@ -150,27 +150,19 @@
     </div>
 
     <!-- House Price Prediction -->
-    <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="600">
-      <div class="card p-3 shadow-sm">
-        <h4>House Price Prediction Using Regression Models</h4>
-        <p>Predicted real estate prices using regression models based on location, size, and other features.</p>
-        <ul>
-          <li>Handled missing values with median/mode imputation and applied One-Hot Encoding.</li>
-          <li>Removed outliers to enhance model accuracy.</li>
-          <li>Evaluated models:
-            <ul>
-              <li>Linear Regression RMSE: 44,830</li>
-              <li>Ridge Regression RMSE: 24,164</li>
-              <li><strong>XGBoost RMSE: 22,019 (Best)</strong></li>
-            </ul>
-          </li>
-          <li>Scored <strong>0.14 on the Kaggle House Prices Competition leaderboard</strong>.</li>
-        </ul>
-      </div>
-    </div>
-
+<div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="600">
+  <div class="card p-3 shadow-sm">
+    <h4>House Price Prediction Using Regression Models</h4>
+    <p>Built a stacked regression model to predict house prices using 79 property features (e.g., area, quality, amenities).</p>
+    <ul>
+      <li>Performed end-to-end preprocessing: outlier removal, log transformation, and feature engineering (e.g., <code>TotalSF</code>, <code>HasGarage</code>).</li>
+      <li>Trained and tuned multiple models: XGBoost, LightGBM, Random Forest, and Linear Regression.</li>
+      <li>Combined models using a stacked ensemble with Ridge Regression as the meta-learner.</li>
+      <li>Visualized model performance and feature importance using Matplotlib and Seaborn.</li>
+      <li>Scored <strong>0.13158 RMSLE</strong> on the Kaggle House Prices leaderboard (Rank <strong>1323 / 4800</strong>, Top 28%).</li>
+    </ul>
   </div>
-</section>
+</div>
 
 
   <!-- Contact Me Section -->
