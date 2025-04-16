@@ -107,7 +107,7 @@
   </div>
 </section>
 
-  <!-- Projects Section -->
+ <!-- Projects Section -->
 <section id="projects" class="container mt-5">
   <h2 class="text-center mb-4">Projects</h2>
   <div class="row">
@@ -116,29 +116,61 @@
     <div class="col-md-6 mb-4" data-aos="zoom-in">
       <div class="card p-3 shadow-sm">
         <h4>Twitter Sentiment Analysis</h4>
-        <p>Analyzed tweet sentiment using NLP techniques. Compared models like Naive Bayes, Logistic Regression, Random Forest, and ANN. Achieved 96.8% accuracy with ANN.</p>
-        <a href="https://github.com/yourusername/twitter-sentiment-analysis" target="_blank">View on GitHub</a>
+        <p>Analyzed tweet sentiment at the entity level to classify messages as Positive, Negative, or Neutral.</p>
+        <ul>
+          <li>Cleaned and preprocessed tweets using standard NLP techniques.</li>
+          <li>Applied TF-IDF Vectorization and standardized sentiment labels.</li>
+          <li>Trained multiple models with accuracy results:
+            <ul>
+              <li>Naive Bayes: 71.37%</li>
+              <li>Logistic Regression: 81.88%</li>
+              <li>Decision Tree: 88.69%</li>
+              <li>Random Forest: 93.89%</li>
+              <li><strong>Artificial Neural Network (ANN): 96.89%</strong></li>
+            </ul>
+          </li>
+          <li>Demonstrated the effectiveness of deep learning for NLP tasks.</li>
+        </ul>
       </div>
     </div>
-      <!-- Fraud Detection -->
-    <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="450">
+
+    <!-- Fraud Detection -->
+    <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
       <div class="card p-3 shadow-sm">
-        <h4>Fraud Detection System</h4>
-        <p>Developed fraud detection models using Logistic Regression, Random Forest, XGBoost, and an Autoencoder. Achieved AUC-ROC of 0.99. Visualized with Matplotlib and Seaborn.</p>
-        <a href="https://github.com/yourusername/fraud-detection" target="_blank">View on GitHub</a>
+        <h4>Fraud Detection Using Machine Learning & Deep Learning</h4>
+        <p>Built a fraud detection system to identify credit card fraud using ML and deep learning models.</p>
+        <ul>
+          <li>Preprocessed a highly imbalanced dataset using Pandas, NumPy, and Seaborn.</li>
+          <li>Compared Logistic Regression, Random Forest, and XGBoost — achieved <strong>AUC-ROC: 0.99</strong>.</li>
+          <li>Implemented an Autoencoder in TensorFlow/Keras for anomaly detection using reconstruction errors.</li>
+          <li>Visualized performance using Confusion Matrix, ROC, Precision-Recall, Matplotlib & Seaborn.</li>
+        </ul>
       </div>
     </div>
-      <!-- House Price Prediction -->
+
+    <!-- House Price Prediction -->
     <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="600">
       <div class="card p-3 shadow-sm">
-        <h4>House Price Prediction</h4>
-        <p>Used regression models (Linear, Ridge, XGBoost) to predict house prices. Best RMSE: 22,019 with XGBoost. Scored 0.14 on Kaggle leaderboard.</p>
-        <a href="https://github.com/yourusername/house-price-prediction" target="_blank">View on GitHub</a>
+        <h4>House Price Prediction Using Regression Models</h4>
+        <p>Predicted real estate prices using regression models based on location, size, and other features.</p>
+        <ul>
+          <li>Handled missing values with median/mode imputation and applied One-Hot Encoding.</li>
+          <li>Removed outliers to enhance model accuracy.</li>
+          <li>Evaluated models:
+            <ul>
+              <li>Linear Regression RMSE: 44,830</li>
+              <li>Ridge Regression RMSE: 24,164</li>
+              <li><strong>XGBoost RMSE: 22,019 (Best)</strong></li>
+            </ul>
+          </li>
+          <li>Scored <strong>0.14 on the Kaggle House Prices Competition leaderboard</strong>.</li>
+        </ul>
       </div>
     </div>
-      
-    </div>
-  </section>
+
+  </div>
+</section>
+
 
   <!-- Contact Me Section -->
 <section id="contact" class="container mt-5">
