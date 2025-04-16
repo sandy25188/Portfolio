@@ -49,3 +49,33 @@ footer {
     top: 0;
   }
 }
+.timeline {
+  position: relative;
+  margin-left: 20px;
+  border-left: 3px solid #007bff;
+  padding-left: 20px;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background-color: #007bff;
+  border-radius: 50%;
+  position: absolute;
+  left: -28px;
+  top: 4px;
+}
+
+.timeline-content {
+  padding-left: 10px;
+}
+
+.timeline-content h5 {
+  margin: 0;
+  font-weight: bold;
+}
